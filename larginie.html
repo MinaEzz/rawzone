@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Raw Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<style>
+
+   /** header{
+
+        background-color: #556d7a;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic ;
+        color: rgb(28, 225, 17);
+        padding: 10px;
+        font-size: x-large;
+        text-align: center;
+        font-weight: bolder;
+    }*/
+    .row{
+        text-align: left;
+         
+
+    }
+    body{
+        background-color: rgb(232, 238, 237);
+    }
+    p{
+       width: 600px;
+    }
+    p{
+       width: 600px;
+       margin-top: 100px;
+    
+
+    }
+    
+    
+    #OV{
+        font-size: x-large;
+        text-align: center;
+        margin-left: 100px;
+        font-style: oblique;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0px;
+
+    }
+
+    .accordion {
+    max-width: 1000px;
+    margin-right: 100px;
+    color: rgb(7, 7, 7);
+  }
+  p{
+
+    color: black;
+  }
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  .accordion-item:last-child {
+    border-bottom: none;
+    
+  }
+  .accordion-header {
+    background-color: #556d7a;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .accordion-header:hover {
+    background-color: #eaeaea;
+  }
+  .accordion-header::after {
+    content: '\25B8'; /* Plus sign */
+    float: right;
+  }
+  .accordion-item.collapsed .accordion-header::after {
+    content: '\25BE'; /* Minus sign */
+  }
+  .accordion-content {
+    display: none;
+    padding: 50px;
+    
+  }
+  .accordion-item:not(.collapsed) .accordion-content {
+    display: block;
+  }
+  #title{
+    font-weight: bolder;
+    text-align: center;
+  }
+
+   th{
+    color: black;
+   }
+  #note{
+    text-align: center;
+  }  
+  .image{
+text-align: center;  }
+  
+</style>
+
+
+
+  <header>
+
+    <h2><a href="#" class="logo"> <img src="logo.png" alt="" height="80px" width="80px">RawZone </a></h2>
+
+    <ul>
+        <li><a href="#home" class="link active">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#products" class="link"> Products</a></li>
+        <li><a href="#contact us" class="link">Contact Us</a></li>
+    </ul>
+  </header>
+
+
+    
+
+<body>
+    
+<div class="col">
+
+    <div class="image">
+        <img src="l-Arganine.jpg" alt="" width="400px" height="400px">
+    </div>
+
+    <p id="title"><b>Product Overview</b></p>
+
+    <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">Description</div>
+          <div class="accordion-content">
+            <b>L-Arginine</b> is a critical amino acid that plays a vital role in the synthesis of nitric oxide, an essential compound required for blood circulation. Studies have demonstrated that L-Arginine-derived nitric oxide can provide significant benefits for wound healing and overall circulation, as well as enhancing mental clarity, immune function, and memory.
+
+                Furthermore, research suggests that L-Arginine supplementation can increase muscle mass and improve endurance, as it is a precursor to creatine, which helps supply energy to all cells of the body.
+                
+               <br><b> In summary</b>, L-Arginine is an excellent supplement for individuals looking to improve their athletic performance, support their immune system, and enhance their overall physical well-being.
+            <br>Helps support immune system
+                <br>Helps support athletic endurance
+               <br>Helps support recovery from athletic performance
+            
+    
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Suggested Use</div>
+          <div class="accordion-content">
+            Take 3-5 grams half an hour before exercise and on rest days. You can take the dose throughout the day  meals to provide the body with nutrients and better muscle recovery.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Nutrition Facts</div>
+          <div class="accordion-content">
+             <img src="l-arginine nutrition.jpg" alt="" width="400" height="300">
+            
+          </div>
+        </div>
+      </div>
+      
+    
+
+   <!-- <div class="content">
+        
+        <p id="OV">Product Overview </p>
+        <p><b>Beta Alanine</b> acts as a precursor to the production of nitric oxide (NO) and works to reduce acidification within the muscles resulting from intense exercise and intense training. Beta Alanine delays muscle fatigue allowing you to increase your performance. and it is an indispensable ingredient for your workout regimen as it serves as a precursor to nitric oxide production, which significantly reduces muscle acidification associated with intense exercise. By delaying muscle fatigue, it enables you to achieve peak performance and surpass your previous limits. Don't wait to add beta-alanine to your routine and unlock your full potential.</p>
+    </div>-->
+
+</div>
+
+
+</body>
+
+
+
+
+
+
+<script>
+    // Add click event listeners to accordion headers
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        const accordionItem = this.parentNode;
+        accordionItem.classList.toggle('collapsed');
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+   
